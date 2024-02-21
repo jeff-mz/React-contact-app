@@ -1,0 +1,66 @@
+.contacts_list {
+  width: 100%;
+}
+
+.contacts_title {
+  width: 90%;
+  padding: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  padding-left: 2.5rem;
+  font-size: 22px;
+}
+.contacts_card {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_card {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.detail {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.delete {
+  outline: none;
+  background: none;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.delete:hover {
+  font-size: 18px;
+}
+.msg {
+  width: 90%;
+  background-color: #e8e8e8;
+  color: #333;
+  padding: 2rem 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: auto;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .contact_card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
